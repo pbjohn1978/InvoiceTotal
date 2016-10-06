@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tip_calculator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.chand.invoicetotal.TipCalculatorActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/txtBillAmount"
+        android:layout_toEndOf="@+id/txtBillAmount"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/editText2" />
+
+    <TextView
+        android:text="Tip Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTipPercent"
+        android:layout_alignRight="@+id/txtTipPercent"
+        android:layout_alignEnd="@+id/txtTipPercent"
+        android:layout_marginTop="35dp"
+        android:id="@+id/txtTipAmount" />
+
+    <TextView
+        android:text="Total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTipAmount"
+        android:layout_alignRight="@+id/txtTipAmount"
+        android:layout_alignEnd="@+id/txtTipAmount"
+        android:layout_marginTop="29dp"
+        android:id="@+id/txtTotal" />
+
+    <TextView
+        android:text="0.0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtTotal"
+        android:layout_alignLeft="@+id/textTipPercent"
+        android:layout_alignStart="@+id/textTipPercent"
+        android:id="@+id/textTipAmount" />
+
+    <TextView
+        android:text="0.0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtTotal"
+        android:layout_alignLeft="@+id/textTipAmount"
+        android:layout_alignStart="@+id/textTipAmount"
+        android:id="@+id/textTotal" />
+
+    <TextView
+        android:text="Tip Percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:id="@+id/txtTipPercent"
+        android:layout_below="@+id/editText2"
+        android:layout_toStartOf="@+id/editText2"
+        android:layout_toLeftOf="@+id/editText2" />
+
+    <TextView
+        android:text="15%"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textTipPercent"
+        android:layout_alignBaseline="@+id/txtTipPercent"
+        android:layout_alignBottom="@+id/txtTipPercent"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2" />
+
+    <Button
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnMinus"
+        android:layout_alignBaseline="@+id/btnPlus"
+        android:layout_alignBottom="@+id/btnPlus"
+        android:layout_toRightOf="@+id/btnPlus"
+        android:layout_toEndOf="@+id/btnPlus" />
+
+    <Button
+        android:text="+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPlus"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_alignBaseline="@+id/textTipPercent"
+        android:layout_alignBottom="@+id/textTipPercent"
+        android:layout_toRightOf="@+id/textTipPercent" />
+
+    <TextView
+        android:text="Bill Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/txtBillAmount"
+        android:layout_alignBaseline="@+id/editText2"
+        android:layout_alignBottom="@+id/editText2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
